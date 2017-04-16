@@ -5,11 +5,27 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 {% include head.html %}
+
+{% if page.image.headerImage %}
+	<style>
+		.image-header {
+			background-image: url('{{ site.url }}/images/home-page.jpg' );
+			background-size: cover;
+			background-position: center;
+			height: 60vh;
+			background-attachment: fixed;												
+			color: white;
+		}
+	</style>
+{% endif %}	
 </head>
 
 <body id="page">
-
-{% include navigation.html %}
+	{% if page.image.headerImage %}
+		{% include header.html %}
+	{% else %}
+		{% include navigation.html %}
+	{% endif %}
 
 <div id="main" role="main">
   <article class="entry">

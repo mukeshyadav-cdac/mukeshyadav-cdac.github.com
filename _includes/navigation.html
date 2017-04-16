@@ -7,7 +7,11 @@
 		        {% else %}
 		        {% assign domain = site.url %}
 		    {% endif %}
-		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		    <li>
+		    	<a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %} {% if page.non_root %}style="color: #000000;"{% endif %}>
+		    		{{ link.title }}
+		    	</a>
+		    </li>
 		  {% endfor %}
 	    </ul>
 	</nav>
@@ -27,8 +31,9 @@
       {% if site.logo != null %}
   		<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo" class="animated fadeInDown"></a>
       {% endif %}
-      <h1 class="site-title animated fadeIn"><a href="{{ site.url }}/">{{ site.title }}</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">{{ site.description }}</h2>
+      <h1 class="site-title animated fadeIn">
+				{{ page.coverText }}
+			</h1>
 	</div>
 </header><!-- /.masthead -->{% endif %}
 
