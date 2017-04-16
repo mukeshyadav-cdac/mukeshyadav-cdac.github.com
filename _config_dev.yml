@@ -1,15 +1,11 @@
 # Site wide configuration
 
-title: Mukesh Yadav Blog - Ruby On Rails | JavaScript Consultant
+title:  ' Mukesh Yadav'
 locale: en_US
-description: Its all about my work.
-logo: my_photo.jpg
+#description: 'A Blog about JavaScript, Ruby and Computer Fundamentals.'
+#logo: site-logo.png
 search: true
 url: http://localhost:4000
-
-image:
-  feature: so-simple-sample-image-1.jpg
-  thumb: site-logo1.png
 
 # Jekyll configuration
 
@@ -40,9 +36,9 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Mukesh
-  avatar: my_photo.jpg
-  email: ashu.3333d@gmail.com
+  name: Your Name
+  avatar: bio-photo.jpg
+  email: you@email.com
   disqus-shortname:
   twitter: #username
   facebook: #username
