@@ -1,6 +1,8 @@
 # Site wide configuration
 
-title:  ' Mukesh Yadav'
+# Site wide configuration
+
+#title:  ' Mukesh Yadav'
 locale: en_US
 #description: 'A Blog about JavaScript, Ruby and Computer Fundamentals.'
 #logo: site-logo.png
@@ -36,15 +38,71 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
+  name: Mukesh Yadav
   avatar: bio-photo.jpg
-  email: you@email.com
+  email: ashu.3333d@gmail.com
   disqus-shortname:
-  twitter: #username
-  facebook: #username
-  github: #username
+  twitter: mukeshyadavcdac
+  facebook: mukeshyadav.cdac
+  github: mukeshyadav-cdac
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: 3333mukesh
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+locale: en_US
+#description: 'A Blog about JavaScript, Ruby and Computer Fundamentals.'
+#logo: site-logo.png
+search: true
+url: http://localhost:4000
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Mukesh Yadav
+  avatar: bio-photo.jpg
+  email: ashu.3333d@gmail.com
+  disqus-shortname:
+  twitter: mukeshyadavcdac
+  facebook: mukeshyadav.cdac
+  github: mukeshyadav-cdac
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: 3333mukesh
   instagram: #username
   flickr: #username
   tumblr: #username

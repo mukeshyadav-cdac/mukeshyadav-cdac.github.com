@@ -7,6 +7,7 @@ categories: posts
 tags: [sample-post]
 comments: true
 share: true
+non_root: true
 ---
 
 Hellow World, It's Mukesh
